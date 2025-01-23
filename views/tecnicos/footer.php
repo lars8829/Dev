@@ -3,12 +3,12 @@
 <footer class="py-4 bg-light mt-auto">
         <div class="container-fluid px-4">
             <div class="d-flex align-items-center justify-content-between small">
-            <div class="text-muted">Copyright &copy; <b>Dev:</b> Jose Luis Lopez A</div>
-                    <div>
+            <div class="text-muted ">Copyright &copy; <b>Dev:</b> Jose Luis Lopez A</div>
+                   <!--  <div>
                         <a href="#">Privacy Policy</a>
                             &middot;
                         <a href="#">Terms &amp; Conditions</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
 
          <!-- JS-->
         <script src="../../js/time.js"></script>
-        <script src="../../js/jquery-3.7.1.js"></script>
+        
         <script src="../../js/simple-datatables.min.js"></script>
         <script src="../../js/datatables-simple-demo.js"></script>
         <script src="../../js/alertifyjs/alertify.js"></script>
@@ -26,7 +26,7 @@
         <script src="../../js/bootstrap.bundle.min.js"></script>
         <script src="../../js/scripts.js"></script>
         <!-- <script src="../../js/funciones.js"></script> -->
-        <script src="../../js/funciones_EditarNovedadesTecnicos.js"></script>
+        <!-- <script src="../../js/funciones_EditarNovedadesTecnicos.js"></script> -->
         <script src="../../js/funciones_registrarCategorias.js"></script>
         <script src="../../js/funciones_registrarSoftware.js"></script>
         <script src="../../js/funciones_registrarHardware.js"></script>
@@ -232,13 +232,28 @@
     }
 </script>
 
+<script>
+    function agregarDatosFormularioNovedades(datos1) {
+  alert("Ingresa a la funcion");
+ 
+    d = datos1.split("||");
+    $("#idu").val(d[0]); 
+    $("#id_usuariou").val(d[1]);
+    $("#titulou").val(d[2]);
+    $("#descripcionu").val(d[3]);
+    $("#fecha_upu").val(d[5]);
+    $("#id_estado_novedadu").val(d[6]); 
+   
+  }
+</script>
+
 <!-- CARGAR DATOS EN DataTables -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $(document).ready(function () {
     $('#tabla').load('componentes/tabla.php');
-    /* $('#buscador').load('componentes/buscador.php'); */
+     $('#buscador').load('componentes/buscador.php');
   });
-</script>
+</script> -->
 
 
 

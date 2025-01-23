@@ -73,7 +73,7 @@ $conexion = retornarConexion();
                                                         <td><?php echo $ver[5] ?></td>
                                                         <td><?php echo $ver[6] ?></td>
                                                         <td>
-                                                        <button class="btn btn-primary bi bi-pencil"  data-bs-toggle="modal" data-bs-target="#modalNovedadesEditarNovedades2"  onclick="agregarDatosFormularioNovedades('<?php echo $data?>')"></button>
+                                                        <button class="btn btn-primary bi bi-pencil"  data-bs-toggle="modal" data-bs-target="#modalNovedadesEditarNovedades2"  onclick="agregarDatosFormularioNovedades('<?php echo $datos1; ?>')"></button>
                                                         </td>
                                                         </tr>
                                                         <?php
@@ -92,134 +92,9 @@ $conexion = retornarConexion();
                                    <!--  </div> -->
                                 </div><!-- fin cardBody -->
                         </div> <!-- FIN CARD mb-2 -->
-                        <br>  
-                        <div class="card mb-2">
-                        
-                        <div class="card-header">
-                            <i class="fas fa-table me-1"></i>
-                            Tabla De Solicitudes
-                        </div>
-
-                        <div class="card-body">
-                            <table id="datatablesSimple2">
-                                <thead>
-                                    <tr>
-                                        <th>Ticket #</th>
-                                        <th>Cliente</th>
-                                        <th>Titulo</th>
-                                        <th>Fecha</th>
-                                        <th>Estado</th>
-                                        <!-- <th>Tipo</th> -->
-                                        <th>Mostrar</th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <?php
-
-                                    $sql = "SELECT n.id, u.email, n.titulo, n.fecha_up, e.nombre,n.descripcion_cliente, n.descripcion_tecnico, p.nombre 
-                                    FROM novedades n
-                                    inner join usuarios u on n.id_usuario = u.id
-                                    inner join estado_novedades e on n.id_estado_novedad = e.id 
-                                    inner join peticiones p on n.id_peticiones = p.id 
-                                    WHERE id_peticiones='1' AND n.id_estado_novedad = 2
-                                    ORDER BY n.id";
-
-                                    $resultSolicitudes = mysqli_query($conexion,$sql);
-                                    while ($ver = mysqli_fetch_row($resultSolicitudes)) {
-                                    $solicitudes =   $ver[0]."||".
-                                                $ver[1]."||".
-                                                $ver[2]."||".
-                                                $ver[3]."||".
-                                                $ver[4]."||".
-                                                $ver[5]."||".
-                                                $ver[6]."||".
-                                                $ver[7];
-                                   /* echo "<script> alert('$datos');</script>"; */
-                                   ?>
-                                     <tr>
-                                    <td><?php echo $ver[0] ?></td>
-                                    <td><?php echo $ver[1] ?></td>
-                                    <td><?php echo $ver[2] ?></td>
-                                    <td><?php echo $ver[3] ?></td>
-                                    <td><?php echo $ver[4] ?></td>
-
-                                    <td>
-                                         <button class="btn btn-primary bi bi-pencil"  data-bs-toggle="modal" data-bs-target="#modalNovedadesEditarSolicitudes"  onclick="agregarDatosFormularioSolicitudes('<?php echo $solicitudes ?>')"></button>
-                                         
-                                    </td>
-                                    </tr>
-                                    <?php
-                                        }
-                                    ?>
-                                    
-                                </tbody>
-                            </table>
-                        </div><!-- fin cardBody -->       
-            </div> <!-- FIN CARD mb-2 -->
-
+                        <br> 
             
-            
-<br><!-- INCIDENTES -->
-<div class="card mb-2">
 
-                        <div class="card-header">
-                            <i class="fas fa-table me-1"></i>
-                            Tabla De Incidentes
-                        </div>
-
-                        <div class="card-body">
-                            <table id="datatablesSimple3">
-                                <thead>
-                                    <tr>
-                                    <th>Ticket #</th>
-                                        <th>Cliente</th>
-                                        <th>Titulo</th>
-                                        <th>Fecha</th>
-                                        <th>Estado</th>
-                                        <!-- <th>Tipo</th> -->
-                                        <th>Mostrar</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <?php
-
-                                    $sql = "SELECT n.id, u.email, n.titulo, n.fecha_up, e.nombre,n.descripcion_cliente, n.descripcion_tecnico, p.nombre
-                                    FROM novedades n
-                                    inner join usuarios u on n.id_usuario = u.id
-                                    inner join estado_novedades e on n.id_estado_novedad = e.id 
-                                    inner join peticiones p on n.id_peticiones = p.id 
-                                    WHERE id_peticiones='2' AND e.nombre='en curso'
-                                    ORDER BY n.id";
-
-                                    $result = mysqli_query($conexion,$sql);
-                                    while ($ver = mysqli_fetch_row($result)) {
-                                    $datos3 = $ver[0]."||".$ver[1]."||".$ver[2]."||".$ver[3]."||".$ver[4]."||".$ver[5];
-                                    ?>
-                                    <tr>
-                                    <td><?php echo $ver[0] ?></td>
-                                    <td><?php echo $ver[1] ?></td>
-                                    <td><?php echo $ver[2] ?></td>
-                                    <td><?php echo $ver[3] ?></td>
-                                    <td><?php echo $ver[4] ?></td>
-                                   
-
-                                    <td>
-                                         <button class="btn btn-primary bi bi-pencil"  data-bs-toggle="modal" data-bs-target="#modalNovedadesEditarIncidentes"  onclick="agregarDatosFormularioIncidentes('<?php echo $datos3; ?>')"></button>
-                                         
-                                    </td>
-                                    </tr>
-                                    <?php
-                                        }
-                                    ?>
-                                    
-                                </tbody>
-                            </table>
-                        </div><!-- fin cardBody -->
-
-                        
-            </div> <!-- FIN CARD mb-2 -->
-            <br>
            
 </main>
 
@@ -383,9 +258,6 @@ $conexion = retornarConexion();
 </div> <!-- final modal-dialog -->
 
 </div><!-- Final modal fade -->
-
-
-
 
 
 <!-- Modal Guardar Incidentes -->

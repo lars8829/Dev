@@ -35,13 +35,13 @@ function actualizaDatosNovedades() {
 function agregarDatosFormularioNovedades(datos1) {
   alert(datos1);
  
-  /*   d = datos1.split("||");
+    d = datos1.split("||");
     $("#idu").val(d[0]); 
     $("#id_usuariou").val(d[1]);
     $("#titulou").val(d[2]);
     $("#descripcionu").val(d[3]);
     $("#fecha_upu").val(d[5]);
-    $("#id_estado_novedadu").val(d[6]);  */
+    $("#id_estado_novedadu").val(d[6]); 
    
   }
 /* ---------------------------------------------END------------------------------------------------------ */

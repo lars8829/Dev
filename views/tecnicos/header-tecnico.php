@@ -17,5 +17,7 @@
         <!-- ALERTIFY -->
         <link rel="stylesheet" href="../../js/alertifyjs/css/alertify.css">
         <link rel="stylesheet" href="../../js/alertifyjs/css/themes/default.css">
+
+        <script src="../../js/jquery-3.7.1.js"></script>
        
     </head>
