@@ -48,6 +48,36 @@
                             <a class="nav-link" href="contenido-mantenimientos.php" style="color:#081012;">Mantenimientos</a>
                         </nav>
                     </div>
+
+                    <div class="sb-sidenav-menu-heading">Gestion SimCards</div>
+
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseSimCards" aria-expanded="false" aria-controls="collapseSimCards" style="color:#0e84b0;">
+                        <div class="sb-nav-link-icon"><i class="bi bi-clipboard2-plus-fill"></i></div>SimCards
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+
+                    <div class="collapse" id="collapseSimCards" aria-labelledby="headingMantenimientos" data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="" style="color:#081012;">Consumo Datos</a>
+                            <a class="nav-link" href="" style="color:#081012;">Inventarios</a>
+                            <a class="nav-link" href="" style="color:#081012;">Movimientos</a>
+                        </nav>
+                    </div>
+
+                    <div class="sb-sidenav-menu-heading">Gestion Operaciones</div>
+
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseOperaciones" aria-expanded="false" aria-controls="collapseOperaciones" style="color:#0eb04f;">
+                        <div class="sb-nav-link-icon"><i class="bi bi-clipboard2-plus-fill"></i></div>Indicadores
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+
+                    <div class="collapse" id="collapseOperaciones" aria-labelledby="headingOperaciones" data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="" style="color:#081012;">Comunicaciones</a>
+                            <a class="nav-link" href="" style="color:#081012;">Ingreso Medidores</a>
+                            <a class="nav-link" href="" style="color:#081012;"></a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </nav>         

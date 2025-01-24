@@ -216,9 +216,6 @@
                 registrarMantenimiento(ide, id_tipo_mtto, id_tecnicos, id_ciclo, revision, actividades, resultado);
 
                 });
-
-
-                
         });
 
                 
@@ -230,6 +227,13 @@
     function validateNoNewLines(input) {
     input.value = input.value.replace(/(\r\n|\n|\r)/gm, "");
     }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#tablaNovedades').load('../../componentes/tablas_helpdesk.php');
+        alert("ok");
+    });
 </script>
 
 <script>
