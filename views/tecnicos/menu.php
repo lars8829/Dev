@@ -45,7 +45,10 @@
 
                     <div class="collapse" id="collapseMantenimientos" aria-labelledby="headingMantenimientos" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="contenido-mantenimientos.php" style="color:#081012;">Mantenimientos</a>
+                            <a class="nav-link" href="contenido-cronomantenimientos-equipos.php" style="color:#081012;">Cronograma Equipos</a>
+                            <a class="nav-link" href="contenido-mantenimientos-equipos" style="color:#081012;">H Mtto Equipos</a>
+                            <a class="nav-link" href="contenido-cronomantenimientos-redes.php" style="color:#081012;">Cronograma Redes</a>
+                            <a class="nav-link" href="contenido-mantenimientos-redes.php" style="color:#081012;">H Mtto Redes</a>
                         </nav>
                     </div>
 

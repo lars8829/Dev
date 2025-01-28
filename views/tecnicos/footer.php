@@ -232,7 +232,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('#tablaNovedades').load('../../componentes/tablas_helpdesk.php');
-        alert("ok");
+       /*  alert("ok"); */
     });
 </script>
 

@@ -3,38 +3,24 @@
         <div id="layoutSidenav_content">
             <main>
             <div class="container-fluid px-4">
-                <h1 class="mt-4">Panel de Crono Mantenimientos</h1>
-                        <ol class="breadcrumb mb-4">
+                <h1 class="mt-4">Programacion de Mantenimientos</h1>
+                        <!-- <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Cronograma Mantenimientos</li>
-                        </ol>
+                        </ol> -->
 
                         <p class="mb-0">
-                        <button type="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCronograma"><i class="fa-solid fa-plus"></i> Agregar Cronograma</button>      
+                        <button type="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#"><i class="fa-solid fa-plus"></i> Actualizar Datos Cronograma</button>      
                         </p>
                         </br>
 
                         <div class="card mb-2">
                                     <div class="card-header">
                                         <i class="fas fa-table me-1"></i>
-                                        Tabla General Stock Partes
+                                        Cronograma de Mantenimientos Redes 2025
                                     </div>
 
                                         <div class="card-body">
-                                        <table id="datatablesSimple">
-                                            <thead>
-                                                <tr>
-                                                    <th>Id</th>
-                                                    <th>Nombre Dispositivo</th>
-                                                    <th>Tipo Dispositivo</th>
-                                                    <th>Fecha Mantenimiento</th>
-                                                    <th>Observaciones</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            
-                                               
-                                            </tbody>
-                                        </table>
+                                        <img src="../../img/Cronograma_Mantenimientos_redes.png" alt="" width="100%" >
                                         </div>
                         </div>
             </div>     

@@ -15,7 +15,7 @@ mysqli_close($conexion);
 include 'header-tecnico.php';
 include 'nav.php';
 include 'menu.php';
-include 'body-cronograma.php';
+include 'body-cronograma-redes.php';
 include 'footer.php'; 
 
 ?>
