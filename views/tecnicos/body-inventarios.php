@@ -352,6 +352,19 @@
                     <label for="exampleFormControlTextarea1" class="form-label">Resultado Final</label>
                     <textarea class="form-control" id="resultado" rows="3" oninput="validateNoNewLines(this)"></textarea>
                 </div>
+                <br> 
+                <?php  
+                $categorias_mtto =   "SELECT * FROM categorias_mttos ";
+                $resultado_categorias_mtto = mysqli_query($conexion, $categorias_mtto);
+                ?>
+                <br>
+                <select class="form-select" id="id_mtto" aria-label="Default select example" required>
+                <option selected>Selecione Categoria Mantenimiento:</option>
+                    <?php while($row = mysqli_fetch_assoc($resultado_categorias_mtto)): ?>
+                    <option value="<?php echo $row['id']; ?>"><?php echo $row['nombre']; ?></option>
+                <?php endwhile; ?>
+                </select>
+                <br>
                 <br>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="registrarMantenimientos">Agregar Movimiento</button>

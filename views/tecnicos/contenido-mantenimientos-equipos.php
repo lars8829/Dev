@@ -9,6 +9,6 @@ $usuario = $_SESSION['usuario'];
 include 'header-tecnico.php';
 include 'nav.php';
 include 'menu.php';
-include 'body-mantenimientos.php';
+include 'body-mantenimientos-equipos.php';
 include 'footer.php'; 
 ?>

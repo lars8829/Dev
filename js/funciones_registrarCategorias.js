@@ -1,7 +1,18 @@
-function registrarCategorias(nombreCategoria){
-
-    cadena = "nombreCategoria=" + nombreCategoria;
+$('#registrarCategorias').click(function(){
+    nombreCategoria = $('#nombreCategoria').val();
+    /* alert('Probando boton de registro categorias'); */
+    /* alert($("#nombreCategoria").val()); */
+    if (nombreCategoria == "") {
+        alert("POR FAVOR DILIGENCIAR TODOS LOS CAMPOS")
+    } else {
+        registrarCategorias(nombreCategoria);
+    }
     
+});
+
+
+function registrarCategorias(nombreCategoria){
+    cadena = "nombreCategoria=" + nombreCategoria;
     $.ajax({
         type:"POST",
         url: "../../php/registrarCategorias.php",

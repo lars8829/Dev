@@ -100,17 +100,7 @@
                     }
                 });
 
-                $('#registrarCategorias').click(function(){
-                    nombreCategoria = $('#nombreCategoria').val();
-                    /* alert('Probando boton de registro categorias'); */
-                    /* alert($("#nombreCategoria").val()); */
-                    if (nombreCategoria == "") {
-                        alert("POR FAVOR DILIGENCIAR TODOS LOS CAMPOS")
-                    } else {
-                        registrarCategorias(nombreCategoria);
-                    }
-                    
-                });
+               
 
                 $('#registrarHardware').click(function(){
                     nombreHardware = $('#nombreHardware').val();
@@ -204,18 +194,7 @@
                                         descripcionElemento);
                 });
 
-                $('#registrarMantenimientos').click(function(){
-                ide = $('#ide').val();
-                id_tipo_mtto = $('#id_tipo_mtto').val();
-                id_tecnicos = $('#id_tecnicos').val();
-                id_ciclo = $('#id_ciclo').val();
-                revision = $('#revision').val();
-                actividades = $('#actividades').val();
-                resultado = $('#resultado').val();
-
-                registrarMantenimiento(ide, id_tipo_mtto, id_tecnicos, id_ciclo, revision, actividades, resultado);
-
-                });
+                
         });
 
                 

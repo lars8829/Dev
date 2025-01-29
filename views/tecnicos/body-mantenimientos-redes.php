@@ -9,7 +9,7 @@
                                 <div class="card mb-2">
                                     <div class="card-header">
                                         <i class="fas fa-table me-1"></i>
-                                        Tabla General Mantenimientos
+                                        Tabla General Mantenimientos Redes
                                     </div>
                                     <div class="card-body">
                                         <table id="datatablesSimple">
@@ -27,12 +27,17 @@
 
                                             <tbody>
                                                 <?php
-                                                    $sql =  "SELECT m.id, e.serialElemento, t.nombre AS tipo_mantenimiento, m.fecha_mantenimiento, tc.nombres AS tecnico_encargado, c.nombres AS ciclo, m.revision, m.actividades, m.resultado
-                                                            FROM mtto_equipos m
-                                                            INNER JOIN elementos e ON m.id_elemento = e.id
-                                                            INNER JOIN tipos_mantenimientos t ON m.id_tipo_mtto = t.id
-                                                            INNER JOIN tecnicos tc ON m.id_tecnicos = tc.id
-                                                            INNER JOIN ciclos c ON m.id_ciclo = c.id";
+                                                    $sql = "SELECT m.id, e.serialElemento,
+                                                        t.nombre AS tipo_mantenimiento,
+                                                        m.fecha_mantenimiento,tc.nombres AS tecnico_encargado,
+                                                        c.nombres AS ciclo, m.revision,
+                                                        m.actividades, m.resultado
+                                                        FROM mtto_equipos m
+                                                        INNER JOIN elementos e ON m.id_elemento = e.id
+                                                        INNER JOIN tipos_mantenimientos t ON m.id_tipo_mtto = t.id
+                                                        INNER JOIN tecnicos tc ON m.id_tecnicos = tc.id
+                                                        INNER JOIN ciclos c ON m.id_ciclo = c.id
+                                                        WHERE id_mtto=2";
                                             
                                                     $result = mysqli_query($conexion,$sql);
                                                     if ($result) {

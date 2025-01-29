@@ -17,6 +17,7 @@
                             <a class="nav-link" href="inicio.php" style="color:#081012;">Panel Novedades</a>
                             <a class="nav-link" href="" style="color:#081012;">Panel Reportes</a>
                             <a class="nav-link" href="solicitudes.php" style="color:#081012;">Crear Novedad</a>
+                            <a class="nav-link" href="solicitudes.php" style="color:#081012;">Actividades Diarias</a>
                         </nav>
                     </div>
 
@@ -46,7 +47,7 @@
                     <div class="collapse" id="collapseMantenimientos" aria-labelledby="headingMantenimientos" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link" href="contenido-cronomantenimientos-equipos.php" style="color:#081012;">Cronograma Equipos</a>
-                            <a class="nav-link" href="contenido-mantenimientos-equipos" style="color:#081012;">H Mtto Equipos</a>
+                            <a class="nav-link" href="contenido-mantenimientos-equipos.php" style="color:#081012;">H Mtto Equipos</a>
                             <a class="nav-link" href="contenido-cronomantenimientos-redes.php" style="color:#081012;">Cronograma Redes</a>
                             <a class="nav-link" href="contenido-mantenimientos-redes.php" style="color:#081012;">H Mtto Redes</a>
                         </nav>
@@ -81,6 +82,22 @@
                             <a class="nav-link" href="" style="color:#081012;"></a>
                         </nav>
                     </div>
+
+                    <div class="sb-sidenav-menu-heading">Gestion Capacitaciones</div>
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCapacitaciones" aria-expanded="false" aria-controls="collapseCapacitaciones" style="color:#00d4ff;">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>Mejoras
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+
+                        <div class="collapse" id="collapseInventarios" aria-labelledby="headingInventarios" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="#" style="color:#081012;">Software</a>
+                                <a class="nav-link" href="#" style="color:#081012;">Stock Partes</a>
+                                <a class="nav-link" href="#" style="color:#081012;">Inventarios</a>
+                                <a class="nav-link" href="#" style="color:#081012;">Movimientos</a>
+                            </nav>
+                        </div>
                 </div>
             </div>
         </nav>         
